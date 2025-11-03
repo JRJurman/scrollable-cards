@@ -1,0 +1,33 @@
+<script src="../scrollable-cards.js"></script>
+<style>
+	html {
+		color-scheme: light dark;
+	}
+
+	sc-card {
+		border-radius: 5px;
+		width: 300px;
+		height: 300px;
+		font-family: monospace;
+	}
+</style>
+
+<sc-container id="colorCards">
+	<sc-card></sc-card>
+	<sc-card></sc-card>
+	<sc-card></sc-card>
+	<sc-card></sc-card>
+	<sc-card></sc-card>
+</sc-container>
+
+<script>
+	[...colorCards.children].forEach((element) => {
+		const r = Math.floor(Math.random() * 255);
+		const g = Math.floor(Math.random() * 255);
+		const b = Math.floor(Math.random() * 255);
+
+		const randomColor = `rgb(${r}, ${g}, ${b})`;
+		element.style.background = randomColor;
+		element.textContent = randomColor;
+	});
+</script>

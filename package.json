@@ -1,0 +1,22 @@
+{
+	"name": "scrollable-cards",
+	"version": "1.0.0",
+	"description": "Web Components for Horizontal Scrolling Cards",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JRJurman/scrollable-cards.git"
+	},
+	"keywords": [
+		"web-component"
+	],
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/JRJurman/scrollable-cards/issues"
+	},
+	"homepage": "https://github.com/JRJurman/scrollable-cards#readme"
+}

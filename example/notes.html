@@ -1,0 +1,42 @@
+<script src="../scrollable-cards.js"></script>
+<style>
+	html {
+		color-scheme: light dark;
+	}
+
+	h2 {
+		text-decoration: underline;
+	}
+
+	sc-container {
+		height: 500px;
+	}
+
+	sc-card {
+		background: light-dark(#dedede, #1f1f1f);
+		border-radius: 5px;
+	}
+
+	textarea {
+		width: 100%;
+		height: 300px;
+	}
+</style>
+
+<sc-container id="notes">
+	<sc-card>
+		<h2 contenteditable>Note Name</h2>
+		<textarea></textarea>
+	</sc-card>
+	<sc-card id="noteCreationCard">
+		<button id="createNewNote">Create New Note</button>
+	</sc-card>
+</sc-container>
+
+<script>
+	createNewNote.addEventListener('click', () => {
+		const newNoteCard = document.createElement('sc-card');
+		newNoteCard.innerHTML = '<h2 contenteditable>Note Name</h2><textarea></textarea>';
+		notes.insertBefore(newNoteCard, noteCreationCard);
+	});
+</script>
